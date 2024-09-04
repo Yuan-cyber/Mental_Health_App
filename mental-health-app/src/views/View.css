@@ -1,0 +1,355 @@
+.homeContent {
+    position: relative; 
+    background-color: #a4cae9;
+    min-height: 100vh; /* Minimum height to fill the viewport */
+    width: 100Vw;
+    padding: 30px 50px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    display: flex;
+    width: 150px;
+    /*justify-content: space-between;*/
+    align-items: center;
+  }
+  .right {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo {
+    margin-right:5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(19, 113, 182, 1);
+  }
+  .logoText{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .center {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+  }
+  .centerContent {   
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slogan {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .addBtn {
+    margin-top: 20px;
+    background-color: #429077;
+    font-weight: bold;
+    font-size:large;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none
+  }
+  
+  .board {
+    /* width: 100VW; */
+    margin-top: auto;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    }
+
+  .boardContent {
+    width: 800px;
+    border-radius: 30px;
+    position: relative;
+    background-color:rgba(255, 246, 233, 1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .myMood {
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    top: 4px;
+    left: 38%;
+  }
+  .fourBtn {
+    padding: 10px;
+    background-color: pink;
+    width: 170px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .btnStyle {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .moodTable {
+    padding-top: 25px;
+  }
+  .border {
+    border: 1px solid darkgray;
+  }
+  .readMore {
+    padding: 6px 10px;
+    background-color: #70A1EA;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 120px;
+    cursor: pointer;
+  }
+
+  table {
+    width: 100%;
+  }
+  td {
+    text-align: center;
+    padding: 4px;
+  }
+  tr:last-child {
+    width: 80px;
+  }
+  th {
+    padding: 5px;
+  }
+  
+  .primary-button {
+    background-color: #429077;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    width: 110px;
+    height: 50px;
+    border: none;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.25);
+  }
+
+  .rounded-button{
+    border-radius: 20px;
+    width: 110px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    background-color:rgba(255, 246, 233, 1)
+  }
+
+  .back-button{
+    margin-top:25px;
+    margin-left:25px;
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 90px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .submit-button {
+    margin-top:25px;
+    margin-left:25px;
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    background-color: #429077;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    width: 90px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  }
+
+  .drift-button{
+    margin-top:25px;
+    margin-left:25px;
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    background-color: #70A1EA;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .mood-tag-button {
+    border: none; 
+    width:170px;
+    padding:10px;
+    border-radius: 20px;
+    color: white; /* Default text color for better contrast */
+  }
+
+.mood-tag-button-small {
+  margin-left:25px;
+  margin-bottom: 25px;
+  border: none;
+  height:40px;
+  width:130px;
+  border-radius: 20px;
+  color: white; /* Default text color for better contrast */
+}
+
+.happiness {
+    background-color: pink;
+}
+
+.anxiety {
+    background-color: rgba(238, 211, 70, 0.81);
+}
+
+.depression {
+    background-color: grey;
+}
+
+.peace {
+    background-color: rgba(174, 224, 211, 1);
+}
+
+.active {
+  box-shadow: 0px 0px 10px 0px grey; /* Adds a shadow to the active tag */
+}
+
+.span{
+  /*display: flex;*/
+  margin: 25px; 
+}
+
+.spanDate{
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.detail{
+  margin: 25px;
+  font-size: 18px;
+}
+
+.detailSmall{
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  display: inline-block;
+  padding:6px;
+  border-radius: 10px;
+  background-color:seashell;
+}
+
+.textArea{
+  margin: 25px;
+  width:80%;
+  height: 100px;
+  padding: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1),inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color:white;
+  border-radius: 1px; 
+}
+
+.textArea-small{
+  margin: 25px;
+  width:60%;
+  height: 30px;
+  padding: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1),inset 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color:white;
+  border-radius: 1px; 
+}
+
+.how-do-i-feel{
+  margin-left:25px;
+  margin-top:15px;
+  margin-bottom: 15px;
+  color:#8E7D7D;
+  font-size: 20px;
+}
+
+.formAdd{
+margin-bottom: 0;
+}
+
+.game-btn{
+    margin-top: 90px;
+    background-color: #429077;
+    font-weight: bold;
+    font-size:x-large;
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none
+}
+
+.slogan-game {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.slogan-game2 {
+  margin-top:20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tips{
+  height:60PX;
+  display:flex;
+  justify-content: center;
+}
+
+.my-comment{
+  display: inline-block;
+  padding:6px;
+  background-color:cornsilk;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.my-comment::before{
+  content: "my comment: ";
+  color:#8E7D7D;
+  font-size: 14px;
+}
+
+.author-comment{
+  display: inline-block;
+  padding:6px;
+  border-radius: 10px;
+  background-color:whitesmoke;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.author-comment::before{
+  content: "author: ";
+  color:#8E7D7D;
+  font-size: 14px;
+}
