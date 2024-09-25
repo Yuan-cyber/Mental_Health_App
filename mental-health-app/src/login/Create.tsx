@@ -62,6 +62,7 @@ const Create = () => {
               <input
                 className="input-create"
                 value={name}
+                name="username"
                 onChange={(e) => setName(e.target.value)}
                 placeholder="username"
                 required
@@ -69,6 +70,7 @@ const Create = () => {
               <input
                 className="input-create"
                 value={password}
+                name="password"
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="password"
                 required
@@ -76,11 +78,12 @@ const Create = () => {
               <input
                 className="input-create"
                 value={phone}
+                name="phone"
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="phone no."
                 required
               />
-              <Button htmlType="submit" className="create-button">
+              <Button htmlType="submit" className="create-button" name="create">
                 Submit
               </Button>
             </form>

@@ -104,6 +104,7 @@ const Login = () => {
                 className="input"
                 type="text"
                 value={name}
+                name="username"
                 onChange={(e) => setName(e.target.value)}
                 placeholder="username"
               />
@@ -111,6 +112,7 @@ const Login = () => {
               <input
                 className="input"
                 type="password"
+                name="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="password"
@@ -118,6 +120,7 @@ const Login = () => {
 
               <Button
                 className="login-button"
+                name="login"
                 htmlType="submit"
                 disabled={loading}
               >

@@ -141,7 +141,10 @@ const Home = () => {
               height: "30px",
             }}
           ></div>
-          <div className="slogan"> You Are Capable Of Healing</div>
+          <div id="heading" className="slogan">
+            {" "}
+            You Are Capable Of Healing
+          </div>
           <Button className="addBtn" onClick={() => toAddMood()}>
             {/*<Link to="/add-mood-pack"></Link>*/}+ Add a New Mood Pack
           </Button>
