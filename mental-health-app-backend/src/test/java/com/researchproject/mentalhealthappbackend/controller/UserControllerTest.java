@@ -104,13 +104,6 @@ public class UserControllerTest {
 
     @Test
     public void testCreateUser() {
-        // 模拟登录以获取token
-        //testLogin();
-        //JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-
-        //String token = (String) jsExecutor.executeScript("return window.sessionStorage.getItem('token');");
-        //System.out.println("Token: " + token);
-        //Assert.assertNotNull(token, "Token should not be null after login.");
 
         // 模拟创建用户
         driver.get("http://localhost:5173/create");
