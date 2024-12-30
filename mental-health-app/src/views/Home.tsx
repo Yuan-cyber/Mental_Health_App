@@ -49,12 +49,15 @@ const Home = () => {
     console.log(token);
 
     try {
-      const response = await axios.get(`http://localhost:8084/moodpacks/tag`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-        params: { tag: tag.toLowerCase(), userId },
-      });
+      const response = await axios.get<MoodPack[]>(
+        `http://localhost:8084/moodpacks/tag`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: { tag: tag.toLowerCase(), userId },
+        }
+      );
 
       setList(
         response.data.map((moodpack: any) => ({

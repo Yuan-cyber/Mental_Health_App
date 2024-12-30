@@ -3,7 +3,6 @@ import reactLogo from "./assets/react.svg";
 import "./index.css";
 import Login from "./login/Login";
 
-import { MoodBoard } from "./MoodBoard";
 import React from "react";
 import Routes from "./router/router";
 const App: React.FC = () => {

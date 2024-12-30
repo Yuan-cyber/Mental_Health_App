@@ -23,7 +23,7 @@ const Community = () => {
       const token = sessionStorage.getItem("token");
 
       try {
-        const response = await axios.get(
+        const response = await axios.get<MoodPack[]>(
           "http://localhost:8084/moodpacks/public",
           {
             headers: {

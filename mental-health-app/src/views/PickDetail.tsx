@@ -31,7 +31,7 @@ const PickDetail = () => {
       const token = sessionStorage.getItem("token");
 
       try {
-        const response = await axios.get(
+        const response = await axios.get<Comment[]>(
           `http://localhost:8084/comment/${moodPack.id}`,
           {
             headers: {
@@ -44,6 +44,7 @@ const PickDetail = () => {
             id: comment.commentId,
             text: comment.text,
             user_id: comment.userId,
+            time: comment.time,
           }))
         );
       } catch (error) {
