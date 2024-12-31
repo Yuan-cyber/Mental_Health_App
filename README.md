@@ -1,4 +1,4 @@
-# ☁️ ☁️ Moodwave Mental Health Support App
+# :cloud: ☁️ Moodwave Mental Health Support App
 
 click here to enter the embedded game: 👉 https://yuan-cyber.github.io/moodwave-game/
 
