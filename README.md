@@ -10,4 +10,4 @@ Try your best to clear the levels！
 <img width="450" alt="frontend-page11" src="https://github.com/user-attachments/assets/dc5f33cd-c187-488d-acba-527b19471017" />
 
 
-<img width="750" alt="compressed_image" src="https://github.com/user-attachments/assets/f2a78fdb-a23e-4b1d-bc5a-1aae821d5e95" />
+<img width="450" alt="compressed_image" src="https://github.com/user-attachments/assets/f2a78fdb-a23e-4b1d-bc5a-1aae821d5e95" />
