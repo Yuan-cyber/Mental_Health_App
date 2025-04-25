@@ -1,4 +1,4 @@
-# :cloud: ☁️ Moodwave Mental Health Support App
+# :cloud: Moodwave Mental Health Support App ☁️
 
 
 <img width="600" alt="front1 (1)" src="https://github.com/user-attachments/assets/176edebf-ffbc-441e-b42c-95744abd9601" />
