@@ -68,7 +68,7 @@ Moodwave/
 ### 2. Community Feed (MoodPack Ocean)
 - **Anonymous public feed** for mood entries
 - **Low-pressure interaction**: Users can "drift" entries and reply
-- **Real-time updates** via REST polling or WebSocket (architecture supports both)
+- **Real-time updates** via REST polling
 - **Privacy**: User identifiers anonymized in public view
 
 ### 3. Gamified Module
@@ -111,7 +111,7 @@ GET    /comment/{id}               # Get comments for mood (params: id)
 
 ## Security
 
-- **JWT Authentication**: Token-based stateless auth with refresh token rotation
+- **JWT Authentication**: Token-based stateless auth
 - **Input Validation**: Server-side validation on all endpoints
 - **SQL Injection Prevention**: Parameterized queries via JPA/Hibernate
 - **CORS Configuration**: Restricted to trusted origins
@@ -137,22 +137,16 @@ GET    /comment/{id}               # Get comments for mood (params: id)
 
 ### Backend
 ```bash
-cd backend
+cd mental-health-app-backend
 mvn clean install
 mvn spring-boot:run
 ```
 
 ### Frontend
 ```bash
-cd frontend
+cd mental-health-app
 npm install
 npm start
-```
-
-### Game Module
-```bash
-cd frontend/src/game
-npm run build
 ```
 
 ---
@@ -163,4 +157,3 @@ npm run build
 - Real-time community feed currently uses REST polling — consider WebSocket for lower latency
 - Game randomization algorithm could be enhanced with difficulty scaling
 - Mobile responsiveness could benefit from dedicated mobile UI optimizations
-
