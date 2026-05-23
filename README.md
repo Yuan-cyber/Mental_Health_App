@@ -13,8 +13,6 @@ Moodwave is a final-year dissertation project that implements evidence-based men
 - **Gamified emotional engagement** (reward activation)
 - **Community interaction** (low-pressure social connection)
 
-Grounded in CBT research and validated through usability testing (UEQ score: Dependability 5.0/5.0).
-
 ---
 
 ## Tech Stack
@@ -86,31 +84,27 @@ Moodwave/
 
 ### Authentication
 ```
-POST   /api/auth/register
-POST   /api/auth/login
-POST   /api/auth/refresh
+POST   /login                      # User login
+POST   /create                     # User registration
 ```
 
 ### Mood Management
 ```
-GET    /api/moods                    # Fetch user's mood logs
-POST   /api/moods                    # Create mood entry
-GET    /api/moods/:id                # Get mood detail
-PUT    /api/moods/:id                # Update mood entry
-DELETE /api/moods/:id                # Delete mood entry
+POST   /moodpacks/add              # Create mood entry
+GET    /moodpacks/{id}             # Get mood detail
+GET    /moodpacks/tag              # Get moods by emotion tag (params: tag, userId)
 ```
 
 ### Community
 ```
-GET    /api/community/feed           # Fetch anonymous feed
-POST   /api/moods/:id/drift          # Share mood to community
-POST   /api/community/:id/reply      # Reply to community entry
+GET    /moodpacks/public           # Fetch public feed
+POST   /moodpacks/{id}/publish     # Share mood to community
 ```
 
-### Game
+### Comments
 ```
-GET    /api/game/scores              # Fetch user's game scores
-POST   /api/game/scores              # Save game session
+POST   /comment/addcomment         # Reply to mood entry
+GET    /comment/{id}               # Get comments for mood (params: id)
 ```
 
 ---
@@ -131,25 +125,6 @@ POST   /api/game/scores              # Save game session
 - Critical user journeys automated before usability sessions
 - Browser compatibility testing (Chrome, Firefox, Safari)
 - Form submission and navigation flows
-
-### Unit & Integration Tests
-- Backend: JUnit + Mockito for service layer
-- Frontend: React Testing Library for component behavior
-- Game: Phaser physics validation
-
-### Usability Testing
-**5 participants** completed UEQ (User Experience Questionnaire):
-| Dimension | Score | Variance |
-|-----------|-------|----------|
-| Attractiveness | 4.2 | 0.56 |
-| Perspicuity | 4.0 | 0.40 |
-| Efficiency | 4.6 | 0.24 |
-| **Dependability** | **5.0** | **0.00** ✓ |
-| Aesthetics | 4.6 | 0.24 |
-
-Issues surfaced and resolved:
-- Mood board widget visual density → Fixed with enlarged helper text
-- Game onboarding clarity → Added contextual instructions
 
 ---
 
@@ -182,29 +157,6 @@ npm run build
 
 ---
 
-## Research Foundation
-
-Design decisions are grounded in **Cognitive Behavioral Therapy (CBT)**:
-
-| CBT Technique | Feature | Implementation |
-|---------------|---------|-----------------|
-| Self-monitoring | Mood Tracking | Emotion tagging with temporal patterns |
-| Behavioral Activation | Gamified Module | Reward activation via game mechanics |
-| Graduated Social Exposure | Community Feed | Anonymous, low-pressure interaction |
-
-**Target Demographic**: Users scoring low on extraversion and high on neuroticism (Big Five model) — underserved by community-first mental health apps.
-
----
-
-## Performance Considerations
-
-- **Frontend**: Code splitting, lazy loading of game module
-- **Backend**: Database indexing on mood timestamps, API response caching
-- **Game**: Canvas optimization, sprite pooling to prevent memory leaks
-- **Database**: Indexed queries for mood retrieval by date range and emotion tag
-
----
-
 ## Known Limitations & Future Work
 
 - Mood logging UI could be further refined (market has raised baseline)
@@ -212,14 +164,3 @@ Design decisions are grounded in **Cognitive Behavioral Therapy (CBT)**:
 - Game randomization algorithm could be enhanced with difficulty scaling
 - Mobile responsiveness could benefit from dedicated mobile UI optimizations
 
----
-
-## License
-
-This project is part of an academic dissertation and is provided as-is for educational and portfolio purposes.
-
----
-
-## Contact
-
-For technical inquiries or to discuss the architecture: [Portfolio](https://yingshuo.co.uk)
